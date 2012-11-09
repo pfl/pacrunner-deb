@@ -1,0 +1,5 @@
+pacrunner (0.5-0.1+git9380cbc) UNRELEASED; urgency=low
+
+  * Initial version at git commit 9380cbc
+
+ -- Patrik Flykt <patrik.flykt@linux.intel.com>  Tue, 23 Oct 2012 16:32:24 +0300

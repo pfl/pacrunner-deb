@@ -1,0 +1,36 @@
+Source: pacrunner
+Maintainer: Patrik Flykt <patrik.flykt@linux.intel.com>
+Section: net
+Priority: optional
+Build-Depends: debhelper(>=8), libglib2.0-dev(>=2.16), libdbus-1-dev(>=1.2), libmozjs185-dev (>=1.8.5), libcurl4-gnutls-dev (>=7.16)
+
+Package: libproxy-pacrunner
+Architecture: any
+Provides: libproxy0
+Conflicts: libproxy0
+Replaces: libproxy0
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: API compatible libproxy replacement using pacrunner
+ This unofficial package contains an API compatible libproxy replacement and
+ the pacrunner daemon.
+ .
+ The pacrunner daemon handles static proxy configuration and runs javascript
+ from proxy.pac. The libproxy API compatible library relays proxy lookup
+ requests to pacrunner, which then does all the work. Thus the footprint of
+ the library is kept very small, and all complexity is taken care of outside
+ the application itself.
+
+Package: libproxy-pacrunner-dev
+Architecture: any
+Depends: ${misc:Depends}, libproxy-pacrunner
+Description: API compatible libproxy replacement development files
+ This unofficial package contains the development files for an API compatible
+ libproxy replacement
+
+Package: pacrunner
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: connman
+Description: Back-end pacrunner daemon
+ This unofficial package contains the back-end pacrunner daemon which will
+ handle static proxies and javascript proxy.pac files.

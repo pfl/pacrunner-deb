@@ -1,0 +1,9 @@
+This Debian package provides unofficial support for pacrunner.
+
+In order to create the Debian package from upstream sources, do the following:
+ - check the intended version number from debian/changelog
+ - copy the upstream tar ball to pacrunner_<version>.orig.tar.gz
+ - untar the upstream tar ball
+ - copy the debian/ directory to pacrunner-<version>/
+ - cd to pacrunner-<version>/ directory
+ - run 'dpkg-buildpackage -rfakeroot -uc -us'

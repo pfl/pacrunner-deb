@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-libproxy \
+		--enable-curl \
+		--enable-mozjs
