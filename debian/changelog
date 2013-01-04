@@ -1,3 +1,9 @@
+pacrunner (0.6-0.1) UNRELEASED; urgency=low
+
+  * Version number bump
+
+ -- Patrik Flykt <patrik.flykt@linux.intel.com>  Fri, 04 Jan 2013 15:31:45 +0200
+
 pacrunner (0.5-0.1+git9380cbc) UNRELEASED; urgency=low
 
   * Initial version at git commit 9380cbc
