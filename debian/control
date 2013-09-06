@@ -2,13 +2,15 @@ Source: pacrunner
 Maintainer: Patrik Flykt <patrik.flykt@linux.intel.com>
 Section: net
 Priority: optional
-Build-Depends: debhelper(>=8), libglib2.0-dev(>=2.16), libdbus-1-dev(>=1.2), libmozjs185-dev (>=1.8.5), libcurl4-gnutls-dev (>=7.16)
+Build-Depends: debhelper(>=9), libglib2.0-dev(>=2.16), libdbus-1-dev(>=1.2), libmozjs185-dev (>=1.8.5), libcurl4-gnutls-dev (>=7.16)
 
 Package: libproxy-pacrunner
 Architecture: any
+Multi-Arch: same
 Provides: libproxy0
 Conflicts: libproxy0
 Replaces: libproxy0
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: API compatible libproxy replacement using pacrunner
  This unofficial package contains an API compatible libproxy replacement and
@@ -22,6 +24,7 @@ Description: API compatible libproxy replacement using pacrunner
 
 Package: libproxy-pacrunner-dev
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, libproxy-pacrunner
 Description: API compatible libproxy replacement development files
  This unofficial package contains the development files for an API compatible
