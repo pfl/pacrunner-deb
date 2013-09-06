@@ -2,6 +2,7 @@ pacrunner (0.8-0.1) UNRELEASED; urgency=low
 
   * Version number updated to 0.8
   * Add multiarch support
+  * Set library soname to match libproxy0 0.3.x provided by Debian
 
  -- Patrik Flykt <patrik.flykt@linux.intel.com>  Fri, 06 Sep 2013 14:09:38 +0300
 

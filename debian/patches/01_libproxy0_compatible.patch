@@ -1,0 +1,22 @@
+--- a/Makefile.in	2013-09-06 14:24:59.456858927 +0300
++++ b/Makefile.in	2013-09-06 14:25:20.050193402 +0300
+@@ -453,7 +453,7 @@
+ @LIBPROXY_TRUE@lib_LTLIBRARIES = libproxy/libproxy.la
+ @LIBPROXY_TRUE@libproxy_libproxy_la_SOURCES = libproxy/proxy.h libproxy/proxy.c
+ @LIBPROXY_TRUE@libproxy_libproxy_la_LIBADD = @DBUS_LIBS@
+-@LIBPROXY_TRUE@libproxy_libproxy_la_LDFLAGS = -version-info 1:0:0
++@LIBPROXY_TRUE@libproxy_libproxy_la_LDFLAGS = -version-info 0:1:0
+ @DATAFILES_TRUE@@LIBPROXY_TRUE@pkgconfigdir = $(libdir)/pkgconfig
+ @DATAFILES_TRUE@@LIBPROXY_TRUE@pkgconfig_DATA = libproxy/libproxy-1.0.pc
+ @LIBPROXY_TRUE@tools_proxy_SOURCES = tools/proxy.c
+--- a/Makefile.am	2013-09-06 14:24:50.810191782 +0300
++++ b/Makefile.am	2013-09-06 14:25:34.486860869 +0300
+@@ -71,7 +71,7 @@
+ 
+ libproxy_libproxy_la_LIBADD = @DBUS_LIBS@
+ 
+-libproxy_libproxy_la_LDFLAGS = -version-info 1:0:0
++libproxy_libproxy_la_LDFLAGS = -version-info 0:1:0
+ 
+ if DATAFILES
+ pkgconfigdir = $(libdir)/pkgconfig
